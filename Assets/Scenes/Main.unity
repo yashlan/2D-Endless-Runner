@@ -396,7 +396,7 @@ MonoBehaviour:
   - {fileID: 4578019182156043001, guid: 24a73021f5fb7854d93cdcf843f89747, type: 3}
   - {fileID: 594248431326988719, guid: 5523fcd9a696f6f48a7a1a5d3ce99690, type: 3}
   - {fileID: 1206622731545849246, guid: d2aeb4e149d81444f9810b00aeee44da, type: 3}
-  terrainTemplateWidth: 9
+  terrainTemplateWidth: 8.89
   earlyTerrainTemplates:
   - {fileID: 1206622731545849246, guid: 46a8749d118047b449b21424e1176906, type: 3}
   areaStartOffset: -7
@@ -659,8 +659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 41.2}
-  m_SizeDelta: {x: 900, y: 267.6}
+  m_AnchoredPosition: {x: 0, y: 13}
+  m_SizeDelta: {x: 900, y: 324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &310900122
 MonoBehaviour:
@@ -684,7 +684,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -695,7 +695,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Space to jump
+  m_Text: "In this game the aim is to get as many \nscores as possible. \nGet your
+    highest score!\n\nPress Space to jump"
 --- !u!222 &310900123
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1060,7 +1061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -173}
+  m_AnchoredPosition: {x: 0, y: -199}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680483224
@@ -1866,7 +1867,7 @@ GameObject:
   - component: {fileID: 1331306701}
   - component: {fileID: 1331306700}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageInstruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
