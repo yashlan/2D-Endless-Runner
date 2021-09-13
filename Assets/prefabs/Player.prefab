@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb8c487bfc73049904528ecb4d901f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreHighlight: {fileID: 8300000, guid: 1b5e3e13ab2a6134db00d852166ecb89, type: 3}
+  scoreHighlightSound: {fileID: 8300000, guid: 1b5e3e13ab2a6134db00d852166ecb89, type: 3}
   jumpSound: {fileID: 8300000, guid: 451b25f7c1d153046835ae168b90e435, type: 3}
+  gameOverSound: {fileID: 8300000, guid: 895f8536bb5bbbc41ac2864b0d87e5bc, type: 3}
   audioSource: {fileID: 6769667715532523409}
 --- !u!61 &6769667715532523405
 BoxCollider2D:
@@ -168,11 +169,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &6769667715532523407
 Animator:

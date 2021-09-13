@@ -91,6 +91,7 @@ public class CharacterMoveController : MonoBehaviour
     {
         GameManager.Instance.GameState = GameState.GameOver;
         GameManager.Instance.StopBackgroundSound();
+        sound.PlaySFX(sound.GameOverSound);
         score.FinishScoring();
         cameraFollow.enabled = false;
         gameOverScreen.SetActive(true);
