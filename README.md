@@ -6,7 +6,7 @@ tugas chapter 3 dilo game academy
 - Paralax Background (mohon maaf kalau backgroundnya ada watermark nya, saya ambil dari gugel)
 - backsound
 - beberapa animasi di tombol
-- increment speed, smakin lama berlari maka speed player akan semakin cepat
+- increment speed, setiap 15 detik speed player akan bertambah 1
 
 ## Gameplay
 
