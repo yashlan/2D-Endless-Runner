@@ -6,7 +6,8 @@ public class CharacterMoveController : MonoBehaviour
     [SerializeField]
     private float moveAccel;
     [SerializeField]
-    private float maxSpeed;
+    [Range(10,20)]
+    private float speed;
     [SerializeField]
     private float jumpAccel;
 
@@ -68,10 +69,25 @@ public class CharacterMoveController : MonoBehaviour
 
             CalculateScore();
 
+            if(speed < 20) 
+                IncerementSpeed();
+
             if (transform.position.y < fallPositionY)
             {
                 GameOver();
             }
+        }
+    }
+
+    float counter = 0;
+    void IncerementSpeed()
+    {
+        counter += Time.deltaTime;
+
+        if (counter >= 15)
+        {
+            speed++;
+            counter = 0;
         }
     }
 
@@ -112,7 +128,7 @@ public class CharacterMoveController : MonoBehaviour
                 isOnGround = false;
 
             Vector2 velocityVector = rb.velocity;
-            velocityVector.x = Mathf.Clamp(velocityVector.x + moveAccel * Time.deltaTime, 0.0f, maxSpeed);
+            velocityVector.x = Mathf.Clamp(velocityVector.x + moveAccel * Time.deltaTime, 0.0f, speed);
 
             if (isJumping)
             {

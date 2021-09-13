@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveAccel: 7
-  maxSpeed: 10
+  speed: 10
   jumpAccel: 30
   cameraFollow: {fileID: 0}
   score: {fileID: 0}
