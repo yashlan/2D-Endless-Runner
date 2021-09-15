@@ -4,8 +4,7 @@ public enum GameState
 {
     Ready,
     Start,
-    GameOver,
-    Win
+    GameOver
 }
 
 public class GameManager : MonoBehaviour
